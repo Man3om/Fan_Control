@@ -14,16 +14,12 @@
 #include "lm35_sensor.h"
 #include "adc.h"
 #include "common_macros.h"
-#include "pwm.h"
 #include "dc_motor.h"
 #include <util/delay.h>
-#include <avr/interrupt.h>
 
 
 int main(void)
 {
-	SET_BIT(SREG,7) ; /* Enable Global Interrupt */
-
 	/* Configure ADC Clock Type(Pre-scaler = 8) & Source Type(Internal) */
 	ADC_configType configiration = {F_cpu_8 , Inrenal} ;
 

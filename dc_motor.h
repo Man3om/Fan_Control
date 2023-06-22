@@ -29,6 +29,6 @@ typedef enum
 
 /* Functions Prototype */
 void DcMotor_init(void);
-void DcMotor_Rotate(uint8 duty , DcMotor_State state);
+void DcMotor_Rotate(uint8 speed , DcMotor_State state);
 
 #endif /* DC_MOTOR_H_ */

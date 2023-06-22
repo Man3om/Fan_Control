@@ -162,7 +162,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x241a
+.text           0x00000000     0x240c
  *(.vectors)
  .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -343,29 +343,29 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x000021fa       0x8a ./lm35_sensor.o
                 0x000021fa                LM35_getTemperature
  .text.PWM_Timer0_Start
-                0x00002284       0x5c ./pwm.o
+                0x00002284       0x4e ./pwm.o
                 0x00002284                PWM_Timer0_Start
- .text.libgcc   0x000022e0       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                0x000022e0                __mulsi3
- .text.libgcc   0x0000231e       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x0000231e                __udivmodhi4
- .text.libgcc   0x00002346        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00002346        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00002346       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00002346                __prologue_saves__
- .text.libgcc   0x0000237e       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x0000237e                __epilogue_restores__
+ .text.libgcc   0x000022d2       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x000022d2                __mulsi3
+ .text.libgcc   0x00002310       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00002310                __udivmodhi4
+ .text.libgcc   0x00002338        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002338        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002338       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00002338                __prologue_saves__
+ .text.libgcc   0x00002370       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00002370                __epilogue_restores__
  .text.avr-libc
-                0x000023b4       0x42 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
-                0x000023b4                itoa
+                0x000023a6       0x42 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+                0x000023a6                itoa
  .text.avr-libc
-                0x000023f6       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
-                0x000023f6                strrev
-                0x00002416                . = ALIGN (0x2)
+                0x000023e8       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x000023e8                strrev
+                0x00002408                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002416        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00002416                exit
-                0x00002416                _exit
+ .fini9         0x00002408        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002408                exit
+                0x00002408                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -384,11 +384,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002416        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002408        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000241a                _etext = .
+                0x0000240c                _etext = .
 
-.data           0x00800060      0x128 load address 0x0000241a
+.data           0x00800060      0x128 load address 0x0000240c
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -469,8 +469,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.bss*)
  *(COMMON)
                 0x00800188                PROVIDE (__bss_end, .)
-                0x0000241a                __data_load_start = LOADADDR (.data)
-                0x00002542                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000240c                __data_load_start = LOADADDR (.data)
+                0x00002534                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800188        0x0
                 0x00800188                PROVIDE (__noinit_start, .)
@@ -495,7 +495,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x1ecc
+.stab           0x00000000     0x1eb4
  *(.stab)
  .stab          0x00000000      0x63c ./App.o
  .stab          0x0000063c      0x204 ./adc.o
@@ -508,12 +508,12 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                                 0xd38 (size before relaxing)
  .stab          0x00001b30      0x1bc ./lm35_sensor.o
                                 0x42c (size before relaxing)
- .stab          0x00001cec      0x1e0 ./pwm.o
-                                0x480 (size before relaxing)
+ .stab          0x00001cec      0x1c8 ./pwm.o
+                                0x45c (size before relaxing)
 
-.stabstr        0x00000000      0xe19
+.stabstr        0x00000000      0xe1a
  *(.stabstr)
- .stabstr       0x00000000      0xe19 ./App.o
+ .stabstr       0x00000000      0xe1a ./App.o
 
 .stab.excl
  *(.stab.excl)

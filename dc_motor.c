@@ -34,7 +34,7 @@ void DcMotor_init(void)
  * Input: Duty Cycle and Motor Direction
  * Return: Void
  *********************************************************************************/
-void DcMotor_Rotate(uint8 duty , DcMotor_State state)
+void DcMotor_Rotate(uint8 speed , DcMotor_State state)
 {
 	switch(state)
 	{
@@ -52,5 +52,5 @@ void DcMotor_Rotate(uint8 duty , DcMotor_State state)
 		break;
 	}
 
-	PWM_Timer0_Start(duty);
+	PWM_Timer0_Start(speed);
 }
