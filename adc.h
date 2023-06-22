@@ -25,7 +25,7 @@ typedef enum
 
 typedef enum
 {
-	AREF,AVCC,Reserved,Inrenal
+	AREF,AVCC,Reserved,Internal
 }ADC_ReferenceVolatge;
 
 typedef struct

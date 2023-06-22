@@ -21,7 +21,7 @@
 int main(void)
 {
 	/* Configure ADC Clock Type(Pre-scaler = 8) & Source Type(Internal) */
-	ADC_configType configiration = {F_cpu_8 , Inrenal} ;
+	ADC_configType configiration = {F_cpu_8 , Internal} ;
 
 	uint8 Temp = 0 ;
 

@@ -20,7 +20,7 @@
  *******************************************************************************/
 void PWM_Timer0_Start(uint8 duty_cycle)
 {
-	uint8 targetTicks = (uint8)(((uint16)(duty_cycle * 256))/100) ;
+	uint8 targetTicks = (uint8)(((uint16)(duty_cycle * 255))/100) ;
 
 	/*
 	 * Fast PWM => FOC0 = 0 ,  WGM00:01 = 1
